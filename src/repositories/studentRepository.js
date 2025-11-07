@@ -1,4 +1,6 @@
 import Repository from "./repository.js";
+import Database from "../config/database.js";
+
 
 export default class StudentRepository extends Repository  {
     constructor() {
@@ -7,7 +9,7 @@ export default class StudentRepository extends Repository  {
 
     async save(student){
         const db = await Database.getDatabaseInstance();
-        const { firstname, lastname, sexe, birth_day } = student_data;
+        const { firstname, lastname, sexe, birth_day } = student;
         
         const insert_sql = `
         INSERT INTO students(firstname, lastname, sexe, birth_day)

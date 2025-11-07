@@ -25,7 +25,7 @@ import StudentRepository from "../repositories/studentRepository.js";
     }
 
     async create(student_data){
-        id = this.studentRepository.save(student_data);
+        const id = await this.studentRepository.save(student_data);
         return this.get(id);
     }
 
