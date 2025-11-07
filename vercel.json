@@ -1,0 +1,11 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "routes": [
+    {
+      "src": "/redirect",
+      "status": 308,
+      "headers": { "Location": "https://example.com/" }
+    },
+    { "src": "/students", "methods": ["GET"], "dest": "/src/app.js" }
+  ]
+}
