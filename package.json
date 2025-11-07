@@ -9,9 +9,6 @@
     "start": "node src/app.js",
     "dev": "node --watch src/app.js"
   },
-  "bin": {
-    "malik": "exe.js"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
