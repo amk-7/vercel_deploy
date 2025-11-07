@@ -1,6 +1,7 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "routes": [
-    { "src": "/students", "methods": ["GET"], "dest": "/src/app.js" }
+    { "src": "/students", "methods": ["GET"], "dest": "/src/app.js" },
+    { "src": "/students", "methods": ["POST"], "dest": "/src/app.js" }
   ]
 }
